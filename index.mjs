@@ -1,5 +1,5 @@
 /*!
-* sillotBridge v0.0.2
+* sillotBridge v0.0.3
 * https://github.com/Hi-Windom/Sillot
 * https://www.npmjs.com/package/sillot
 */
