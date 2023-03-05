@@ -1,37 +1,16 @@
-/*!
-* sillotBridge v0.0.2
-* https://github.com/Hi-Windom/Sillot
-* https://www.npmjs.com/package/sillot
-*/
-const isMobile = () => {
-    return document.getElementById("sidebar") ? true : false;
-};
-
-class SConst {
-    static Themes = {
-        BuiltinThemeLight: "daylight",
-        BuiltinThemeDark: "midnight",
-        DefaultThemeLight: "goodday",
-        DefaultThemeDark: "goodnight",
-        lnco: "Sofill+",
-    };
-    // 渲染进程调主进程
-    // Sillot extend
-    static SILLOT_SHOW = "sillot-show";
-    static SISI_SHOW = "sisi-show";
-    static SILLOT_OPENURL = "sillot-openurl";
-    static SISI_OPENURL = "sisi-openurl";
-}
-
-var version="0.9.2";var syv="2.7.8";
-
+import { isMobile } from "./util/functions";
+// declare const SIYUAN_VERSION: string;
+// declare const NODE_ENV: string;
+// declare const SIYUAN_ORIGIN_VERSION: string;
+import { SConst } from "./SConst";
+import * as pkg from "../package.json";
 const NODE_ENV = "development";
-const SIYUAN_VERSION = version;
-const SIYUAN_ORIGIN_VERSION = syv;
+const SIYUAN_VERSION = pkg.version;
+const SIYUAN_ORIGIN_VERSION = pkg.syv;
 const _SIYUAN_ORIGIN_VERSION = SIYUAN_ORIGIN_VERSION;
 const _SIYUAN_VERSION = SIYUAN_VERSION;
 const _NODE_ENV = NODE_ENV;
-class Constants extends SConst {
+export class Constants extends SConst {
     static SIYUAN_ORIGIN_VERSION = _SIYUAN_ORIGIN_VERSION;
     static SIYUAN_VERSION = _SIYUAN_VERSION;
     static NODE_ENV = _NODE_ENV;
@@ -449,5 +428,3 @@ class Constants extends SConst {
     // Google Analytics 事件
     static ANALYTICS_EVT_ON_GET_CONFIG = "siyuan.onGetConfig";
 }
-
-export { Constants };
