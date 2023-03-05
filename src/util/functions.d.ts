@@ -1,0 +1,10 @@
+export declare const isMobile: () => boolean;
+export declare const isWindow: () => boolean;
+export declare const isTouchDevice: () => boolean;
+export declare const isArrayEqual: (arr1: string[], arr2: string[]) => boolean;
+export declare const getRandom: (min: number, max: number) => number;
+export declare const getSearch: (key: string, link?: string) => string;
+export declare const isBrowser: () => boolean;
+export declare const isDynamicRef: (text: string) => boolean;
+export declare const isFileAnnotation: (text: string) => boolean;
+export declare const looseJsonParse: (text: string) => any;
