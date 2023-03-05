@@ -9,6 +9,8 @@ export declare class Hint {
     constructor(protyle: IProtyle);
     render(protyle: IProtyle): void;
     genLoading(protyle: IProtyle): void;
+    bindUploadEvent(protyle: IProtyle, element: HTMLElement): void;
+    getHTMLByData(data: IHintData[], hasSearch?: boolean): string;
     genHTML(data: IHintData[], protyle: IProtyle, hide?: boolean, hasSearch?: boolean): void;
     private genSearchHTML;
     private genEmojiHTML;
