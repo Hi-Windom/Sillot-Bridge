@@ -13,8 +13,8 @@ class SConst {
    static  __initStatic() {this.Themes = {
     BuiltinThemeLight: "daylight", // 思源默认主题
     BuiltinThemeDark: "midnight", // 思源默认主题
-    DefaultThemeLight: "goodday", // 汐洛默认主题
-    DefaultThemeDark: "goodnight", //汐洛默认主题
+    DefaultThemeLight: "sillon", // 汐洛默认主题
+    DefaultThemeDark: "sillou", //汐洛默认主题
     lnco: "Sofill+",
   };}
 
